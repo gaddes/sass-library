@@ -31,22 +31,22 @@ body {
 }
 
 // Buttons
-.button-standard {
+.btn-standard {
     @extend %button-shared; // Extend & Inheritance
     @include border-and-background-colour(lightgrey);
 }
 
-.button-success {
+.btn-success {
     @extend %button-shared; // Extend & Inheritance
     @include border-and-background-colour(green); // Mixin
 }
 
-.button-warning {
+.btn-warning {
     @extend %button-shared; // Extend & Inheritance
     @include border-and-background-colour(orange); // Mixin
 }
 
-.button-error {
+.btn-error {
     @extend %button-shared; // Extend & Inheritance
     @include border-and-background-colour(red); // Mixin
 }
