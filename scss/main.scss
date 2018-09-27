@@ -1,52 +1,8 @@
-@import "";
+@import "reset";
+@import "variables";
+@import "buttons";
 
 body {
     margin-top: 2rem;
     margin-left: 2rem;
-}
-
-// Mixins
-@mixin border-radius($property) {
-    -webkit-border-radius: $property;
-    -moz-border-radius: $property;
-    border-radius: $property;
-}
-
-@mixin border-and-background-colour($property) {
-    border-color: $property; // Update border-color
-    &:hover {
-        background-color: $property; // Update background-color on hover
-    }
-}
-
-// Extend & Inheritance
-%button-shared {
-    border: 1px solid;
-    padding: 0.5rem 1rem;
-    @include border-radius(5px); // Mixin
-    transition: 0.3s;
-    &:hover {
-        color: white;
-    }
-}
-
-// Buttons
-.btn-standard {
-    @extend %button-shared; // Extend & Inheritance
-    @include border-and-background-colour(lightgrey);
-}
-
-.btn-success {
-    @extend %button-shared; // Extend & Inheritance
-    @include border-and-background-colour(green); // Mixin
-}
-
-.btn-warning {
-    @extend %button-shared; // Extend & Inheritance
-    @include border-and-background-colour(orange); // Mixin
-}
-
-.btn-error {
-    @extend %button-shared; // Extend & Inheritance
-    @include border-and-background-colour(red); // Mixin
 }
