@@ -1,7 +1,13 @@
-@import "reset";
-@import "variables";
-@import "buttons";
+// Global
+@import 'reset';
+@import 'variables';
+@import 'typography';
 
+// Components
+@import 'components/buttons';
+@import 'components/forms';
+
+// Temporary stuff
 body {
     margin-top: 2rem;
     margin-left: 2rem;

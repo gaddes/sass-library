@@ -1,0 +1,11 @@
+.form {
+
+  p, input {
+    margin-bottom: 0.5rem;
+  }
+
+  input {
+    @include border-radius($line-weight-standard);
+    padding: 0.5rem;
+  }
+}

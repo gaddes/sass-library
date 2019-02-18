@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SASS Library</title>
-    <link rel="stylesheet" href="./scss/main.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>SASS Library</title>
+	<link rel="stylesheet" href="./scss/main.css">
 </head>
 <body>
-    <button class="btn-standard">Standard</button>
-    <button class="btn-success">Success</button>
-    <button class="btn-warning">Warning</button>
-    <button class="btn-error">Error</button>
+	<h1>Buttons</h1>
+	<div class="block">
+		<button class="btn-standard">Standard</button>
+		<button class="btn-submit">Submit</button>
+		<button class="btn-success">Success</button>
+		<button class="btn-warning">Warning</button>
+		<button class="btn-error">Error</button>
+	</div>
+
+	<h1>Forms</h1>
+	<div class="block form">
+		<form action="/">
+			<p>First name</p>
+			<input type="text" name="firstname" placeholder="Mickey">
+			<p>Surname</p>
+			<input type="text" name="lastname" placeholder="Mouse">
+			<br>
+			<input class="btn-submit" type="submit" value="Submit">
+		</form>
+	</div>
 </body>
 </html>
